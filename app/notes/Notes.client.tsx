@@ -53,6 +53,7 @@ function NotesContent() {
         perPage: PER_PAGE,
         search: debouncedSearch || undefined,
       }),
+      placeholderData: previousData => previousData,
   });
 
   const notes = data?.notes ?? [];
